@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Таймер зворотного відліку</title>
+  <link rel="stylesheet" href="timer.css">
+</head>
+<body>
+  <main>
+    <h1>Таймер зворотного відліку</h1>
+    <div id="display" role="timer" aria-live="off">00:30</div>
+    <p id="message" role="status" aria-live="polite">Натисни «Почати», щоб запустити таймер.</p>
+    <div class="controls">
+      <button id="startButton" type="button">Почати</button>
+      <button id="resetButton" type="button">Скинути</button>
+    </div>
+  </main>
+  <script src="timer.js" defer></script>
+</body>
+</html>

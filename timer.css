@@ -1,0 +1,13 @@
+* { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 24px; background: #f3f0ff; color: #29243a; font: 16px/1.5 system-ui, sans-serif; }
+    main { width: min(100%, 420px); padding: 32px; border-radius: 20px; background: white; box-shadow: 0 12px 40px #3323661a; text-align: center; }
+    h1 { margin: 0 0 24px; font-size: 1.5rem; }
+    #display { margin: 12px 0 24px; font-size: clamp(3rem, 15vw, 5rem); font-weight: 750; font-variant-numeric: tabular-nums; letter-spacing: .04em; }
+    #message { min-height: 3em; margin: 0 0 20px; color: #5e5870; }
+    .controls { display: flex; justify-content: center; gap: 12px; }
+    button { border: 0; border-radius: 10px; padding: 11px 20px; background: #6338c9; color: white; font: inherit; font-weight: 650; cursor: pointer; }
+    button:hover:not(:disabled) { background: #512bb0; }
+    button:disabled { background: #c9c4d5; cursor: not-allowed; }
+    .urgent { color: #b42318; animation: pulse .65s ease-in-out infinite alternate; }
+    @keyframes pulse { to { transform: scale(1.08); opacity: .65; } }
+    @media (prefers-reduced-motion: reduce) { .urgent { animation: none; } }
